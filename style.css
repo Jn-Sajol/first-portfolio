@@ -1,3 +1,242 @@
-body{
-    background-color: red;
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+
 }
+/* utility css */
+.flexbox{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.item-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.btn-primary{
+    background-color:var(--primary);
+    color: whitesmoke;
+
+    
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: white;
+}
+
+/* end utility */
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: var(--dark);
+    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 87%, 0 100%);
+}
+nav{
+    padding: 2rem;
+}
+
+.container{
+    max-width: 952px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+
+}
+.pure-left-nav{
+    margin-right:3rem;
+}
+
+.pure-left-to-right-nav li{
+    display: inline;
+}
+
+.pure-left-to-right-nav a{
+ color: var(--light);
+ text-decoration: none;
+ margin-right: 2rem;
+ text-transform: uppercase;
+ transition: all .3s;
+}
+.pure-left-to-right-nav a:hover{
+    color: var(--primary);
+}
+/* .right-dev button{
+    background-color: var(--primary);
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-rendering: var(--dark);
+}
+.right-dev button:hover{
+    background-color: yellowgreen;
+    color: var(--pure);
+} */
+.left img{
+    width: 400px;
+    /* height: 600px; */
+    /* margin-left: 40px; */
+
+}
+.right{
+    color: var(--pure);
+    margin-left: 40px;
+}
+.right h4{
+    color: var(--primary);
+    margin-bottom: .3rem;
+}
+.right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.right h1 span{
+    color: var(--primary);
+}
+.right p{
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem 0;
+}
+.aboutimg{
+    height: 450px;
+}
+.rigtwrite h1{
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.rigtwrite span{
+color: var(--primary);
+}
+.rigtwrite h2{
+    font-size: 1 rem;
+    margin-bottom:15px ;
+    font-weight: 400;
+}
+.rigtwrite p{
+    font-family: 'Lato',sans-serif ;
+    color: gray;
+    line-height: 1.5;
+}
+
+.fivelogo a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 40px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+
+    
+}
+.fivelogo a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.heding {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.heding span{
+    color: var(--primary);
+}
+.heding+ p{
+    text-align: center;
+    margin-bottom: 7rem;
+    
+}
+.card-rapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:6rem;
+    
+}
+.services{
+    background-color: rgb(163, 161, 158);
+}
+.card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .7s ease;
+}
+.card:hover{
+    background-color: var(--dark);
+    color: var(--pure);
+}
+.card h2{
+    margin-bottom: 1rem;
+}
+.card img{
+    position: absolute;
+    top:-3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.freelancer{
+    text-align: center;
+    color: var(--pure);
+    padding: 4rem 2rem;
+}
+.freelancer h1{
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+}
+.freelancer p{
+    margin-bottom: 4rem;
+}
+.identity{
+    background: linear-gradient(135deg, rgb(37, 36, 34) 60%, cyan);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 87%, 0 100%);
+}
+
+   
